@@ -74,7 +74,6 @@ $main-viewport: 1290px;
 
   &--form {
     display: flex;
-    width: 470px;
     margin: 50px auto 0 auto;
     padding: 25px 30px;
     background-color: var(--alt-purple);
@@ -85,6 +84,7 @@ $main-viewport: 1290px;
     @media (min-width: $main-viewport) {
       margin-top: initial;
       order: initial;
+      width: 470px;
     }
 
     .float-label {
@@ -92,7 +92,7 @@ $main-viewport: 1290px;
       top: 20px;
       left: 20px;
       position: absolute;
-      transition: all .1s;
+      transition: all 0.1s;
 
       &.active {
         top: 5px;

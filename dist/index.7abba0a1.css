@@ -376,7 +376,6 @@ p {
 }
 
 .contact--form {
-  width: 470px;
   background-color: var(--alt-purple);
   border-radius: 12px;
   order: 2;
@@ -390,6 +389,7 @@ p {
   .contact--form {
     margin-top: initial;
     order: initial;
+    width: 470px;
   }
 }
 
