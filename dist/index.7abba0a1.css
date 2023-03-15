@@ -377,6 +377,7 @@ p {
 
 .contact--form {
   background-color: var(--alt-purple);
+  width: 100%;
   border-radius: 12px;
   order: 2;
   grid-area: 1 / 2 / 3 / 3;

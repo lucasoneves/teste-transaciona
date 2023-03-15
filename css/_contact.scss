@@ -80,6 +80,7 @@ $main-viewport: 1290px;
     border-radius: 12px;
     grid-area: 1 / 2 / 3 / 3;
     order: 2;
+    width: 100%;
 
     @media (min-width: $main-viewport) {
       margin-top: initial;
