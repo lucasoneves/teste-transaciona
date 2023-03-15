@@ -1,0 +1,32 @@
+$main-viewport: 1290px;
+
+.footer {
+  padding: 60px 0 0 0;
+  height: 265px;
+
+  img {
+    display: block;
+    margin: auto;
+
+    @media (min-width: $main-viewport) {
+      display: initial;
+      margin: initial;
+    }
+  }
+
+  ul {
+    gap: 20px;
+    width: 100%;
+    margin: 30px 0;
+    @media (min-width: $main-viewport) {
+      gap: 55px;
+      width: auto;
+      margin: initial;
+    }
+    a {
+      color: var(--lighter-purple);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

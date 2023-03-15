@@ -4,12 +4,39 @@
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: url('../assets/images/main-bg.png') no-repeat center center;
+  background-size: cover;
+  background-position: center 50px;
 }
 
 .container {
   max-width: 1254px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 20px;
+
+  @media (min-width: 1290px) {
+    padding: 0;
+  }
+}
+
+:root {
+  --lighter-purple: #aca3c2;
+  --base-purple: #5d2dcf;
+  --alt-purple: #4e21b9;
+  --bold-purple: #2C0476;
+  --dark-purple: #1f0a54;
+  --darkest-purple: #200556;
+  --base-orange: #ff352b;
+  
+
+  --main-viewport: 1290px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
 }
