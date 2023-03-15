@@ -1,0 +1,133 @@
+$main-viewport: 1290px;
+
+.virtual-wallets {
+  padding: 100px 0;
+  @media (min-width: $main-viewport) {
+    padding: 0;
+  }
+  h2 {
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--base-purple);
+
+    @media (min-width: $main-viewport) {
+      font-size: 83px;
+    }
+  }
+
+  .ribbon-border {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../assets/images/ribbon.png") no-repeat;
+      background-position: 0 80%;
+      background-size: 80%;
+      right: 0;
+      width: 347px;
+      height: 30px;
+      z-index: -5;
+      left: 0;
+      bottom: 12px;
+
+      @media (min-width: $main-viewport) {
+        background-size: 100%;
+      }
+    }
+  }
+
+  p {
+    margin: 20px 0;
+    max-width: 560px;
+    line-height: 1.5;
+  }
+  article {
+    flex: 2;
+  }
+  img {
+    flex: 1;
+    width: 494px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    opacity: 0.1;
+    z-index: -1;
+
+    @media (min-width: $main-viewport) {
+      z-index: 0;
+      position: static;
+      opacity: 1;
+    }
+  }
+}
+
+.box-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 50px 0;
+  gap: 20px;
+  text-align: center;
+
+  @media (min-width: $main-viewport) {
+    margin: 150px 0;
+    padding: 60px 90px;
+    text-align: initial;
+  }
+
+  .info {
+    width: 100%;
+
+    @media (min-width: $main-viewport) {
+      width: auto;
+    }
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--base-orange);
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0;
+
+    @media (min-width: $main-viewport) {
+      font-size: 44px;
+    }
+  }
+
+  p {
+    width: 100%;
+
+    @media (min-width: $main-viewport) {
+      max-width: 570px;
+    }
+  }
+
+  img {
+    display: none;
+
+    @media (min-width: $main-viewport) {
+      display: block;
+    }
+  }
+}
+
+.data-encrypted {
+  .box-card {
+    @media (min-width: $main-viewport) {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      p {
+        max-width: 648px;
+      }
+    }
+  }
+}

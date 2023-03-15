@@ -1,0 +1,14 @@
+$main-viewport: 1290px;
+
+.header {
+  border-top: 4px solid var(--base-purple);
+  padding: 25px 0;
+
+  img {
+    width: 150px;
+
+    @media (min-width: $main-viewport) {
+      width: auto;
+    }
+  }
+}

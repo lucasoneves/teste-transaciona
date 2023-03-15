@@ -1,0 +1,139 @@
+$main-viewport: 1290px;
+
+.contact {
+  color: #fff;
+  background-color: var(--bold-purple);
+  border-top: 20px solid var(--darkest-purple);
+  border-bottom: 20px solid var(--darkest-purple);
+  height: auto;
+  @media (min-width: $main-viewport) {
+    border: 0;
+    background-color: var(--dark-purple);
+    background: url("../assets/images/bg-contact.png");
+    height: 821px;
+  }
+
+  .container {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: $main-viewport) {
+      padding: 162px 0 100px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      column-gap: 130px;
+    }
+  }
+
+  h2 {
+    font-size: 14px;
+    color: var(--base-orange);
+    font-weight: 900;
+  }
+
+  &--info {
+    text-align: center;
+
+    grid-area: 1 / 1 / 2 / 2;
+    ul {
+      img {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $main-viewport) {
+      text-align: left;
+      max-width: 570px;
+    }
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0;
+
+    @media (min-width: $main-viewport) {
+      font-size: 44px;
+    }
+  }
+
+  .medium-title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  ul {
+    margin: 20px 0;
+  }
+
+  &--form {
+    display: flex;
+    width: 470px;
+    margin: 50px auto 0 auto;
+    padding: 25px 30px;
+    background-color: var(--alt-purple);
+    border-radius: 12px;
+    grid-area: 1 / 2 / 3 / 3;
+    order: 2;
+
+    @media (min-width: $main-viewport) {
+      margin-top: initial;
+      order: initial;
+    }
+
+    .float-label {
+      color: black;
+      top: 20px;
+      left: 20px;
+      position: absolute;
+      transition: all .1s;
+
+      &.active {
+        top: 5px;
+        left: 20px;
+        color: #8e8e8e;
+        font-size: 12px;
+      }
+    }
+
+    form {
+      width: 100%;
+    }
+
+    label {
+      width: 100%;
+      display: block;
+      height: fit-content;
+      position: relative;
+      margin: 10px 0;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  &--message {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    grid-area: 2 / 1 / 3 / 2;
+    order: 3;
+
+    img {
+      width: 100%;
+    }
+
+    @media (min-width: $main-viewport) {
+      order: initial;
+      margin: initial;
+      text-align: left;
+    }
+  }
+}
